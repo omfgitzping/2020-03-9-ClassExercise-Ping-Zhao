@@ -9,7 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var labelSfsu: UILabel!
+    
+    @IBAction func switchClicked(_ sender: UISwitch) {
+        if sender.isOn {
+            labelSfsu.textColor = UIColor.purple
+        }else{
+            labelSfsu.textColor = UIColor.black
+        }
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
